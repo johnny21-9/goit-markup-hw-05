@@ -540,11 +540,8 @@ address a {
   display: flex;
   width: 170px;
   height: 90px;
-  border-radius: 4px;
-  border: 1px solid var(--icon-grey);
-  color: var(--icon-grey);
   margin-left: 30px;
-  transition: border 250ms var(--cubic), color 250ms var(--cubic);
+  color: var(--icon-grey);
 }
 .clients-list {
   display: flex;
@@ -557,6 +554,9 @@ address a {
   width: 100%;
   align-items: center;
   justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--icon-grey);
+   transition: border 250ms var(--cubic), color 250ms var(--cubic);
 }
 .client-link:link,
 .client-link:visited {
@@ -565,8 +565,8 @@ address a {
 .client-link svg {
   fill: currentColor;
 }
-.client-container:hover,
-.client-container:focus {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid var(--light-blue);
   color: var(--light-blue);
 }
